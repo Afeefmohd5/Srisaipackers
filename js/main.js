@@ -81,6 +81,22 @@
             }
         }
     });
+
+    // Active navigation links based on current page
+    $(document).ready(function() {
+        // Get current page filename
+        var currentPage = window.location.pathname.split('/').pop();
+        
+        // Remove 'active' class from all nav links
+        $('.navbar-nav .nav-link').removeClass('active');
+        
+        // Add 'active' class to the nav link matching current page
+        $('.navbar-nav .nav-link').each(function() {
+            var linkHref = $(this).attr('href');
+            if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                $(this).addClass('active');
+            }
+        });
+    });
     
 })(jQuery);
-
