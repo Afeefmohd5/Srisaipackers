@@ -40,22 +40,22 @@
     });
 
 
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
+   // Local Video Modal Controller
+    $(document).ready(function() {
+    // Get the video element
+    var video = document.getElementById("video");
 
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
+    // When the modal is shown, play the video
+    $('#videoModal').on('shown.bs.modal', function () {
+        video.play();
     });
+
+    // When the modal is hidden, pause the video and reset its time
+    $('#videoModal').on('hide.bs.modal', function () {
+        video.pause();
+        video.currentTime = 0;
+    });
+});
 
 
     // Testimonials carousel
