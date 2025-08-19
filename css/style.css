@@ -155,7 +155,7 @@ sup {
 }
 
 a {
-  color: rgba(2,69,124,255);
+  color: white;
   text-decoration: none;
   background-color: transparent;
 }
@@ -9706,4 +9706,27 @@ p,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* Official WhatsApp Green */
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px; /* Vertically centers the icon */
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #128C7E; /* A darker green for hover effect */
+  color: #FFF;
+  transform: scale(1.1); /* Makes the icon slightly larger on hover */
 }
