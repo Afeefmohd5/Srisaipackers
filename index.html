@@ -467,6 +467,39 @@ Ravikumar Surpur IAS</span>
     </div>
     <!-- Team End -->
 
+     <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 200px; /* Adjust based on image height */
+      background-color: #f0f0f0;
+    }
+
+    .marquee-image {
+      position: absolute;
+      top: 0;
+      right: -100%; /* Start off-screen to the right */
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        right: -100%;
+      }
+      100% {
+        right: 100%;
+      }
+    }
+  </style>
+<h2 style="text-align: center; margin-top: 20px; color: #00034f;">
+    Few Of Our Esteemed Clients
+</h2>
+  <div class="marquee-container">
+
+  <img src="img/marquee.png" alt="Marquee Image" class="marquee-image" height="200">
+</div>
+
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
