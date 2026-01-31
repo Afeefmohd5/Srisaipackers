@@ -5,7 +5,7 @@ $(function() {
         
         // 1. Your WhatsApp Number (without '+', spaces, or dashes)
         // CHANGE THIS TO YOUR NUMBER
-        const phoneNumber = '918977420984';
+        const phoneNumber = '919663823344';
 
         // 2. Get the user's input from the form fields using their IDs
         const userName = $('#userName').val();
